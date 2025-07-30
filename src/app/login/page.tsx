@@ -52,7 +52,7 @@ export default function LoginPage() {
               Login
             </Button>
             <Button variant="outline" className="w-full" asChild>
-              <Link href="/">Developer Bypass</Link>
+              <Link href="/dashboard">Developer Bypass</Link>
             </Button>
           </div>
           <div className="mt-4 text-center text-sm">

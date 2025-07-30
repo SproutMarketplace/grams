@@ -1,111 +1,104 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { PageHeader } from '@/components/page-header';
-import { DollarSign, Package, Users, ShoppingCart, TrendingUp } from 'lucide-react';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Flower2, TrendingUp, BarChart, FileText } from 'lucide-react';
+import Image from 'next/image';
 
-const manufacturerKpis = [
-  {
-    title: 'Total Revenue',
-    value: '$1,250,430',
-    icon: DollarSign,
-    change: '+12.5%',
-    changeType: 'increase',
-  },
-  {
-    title: 'Products Listed',
-    value: '482',
-    icon: Package,
-    change: '+20 since last month',
-    changeType: 'increase',
-  },
-  {
-    title: 'Active Dispensaries',
-    value: '78',
-    icon: Users,
-    change: '+5 new partners',
-    changeType: 'increase',
-  },
-  {
-    title: 'Pending Orders',
-    value: '32',
-    icon: ShoppingCart,
-    change: '-3 since yesterday',
-    changeType: 'decrease',
-  },
-];
-
-const dispensaryKpis = [
-    {
-      title: 'Total Spend',
-      value: '$480,920',
-      icon: DollarSign,
-      change: '+8.2% vs last quarter',
-      changeType: 'increase',
-    },
-    {
-      title: 'Open Orders',
-      value: '15',
-      icon: ShoppingCart,
-      change: '5 awaiting shipment',
-      changeType: 'neutral',
-    },
-    {
-      title: 'Top Selling Category',
-      value: 'Edibles',
-      icon: TrendingUp,
-      change: 'Flowers dropping to #2',
-      changeType: 'neutral',
-    },
-    {
-      title: 'Connected Manufacturers',
-      value: '24',
-      icon: Package,
-      change: '+2 since last week',
-      changeType: 'increase',
-    },
-  ];
-
-export default function DashboardPage() {
+function FeatureCard({ icon: Icon, title, description }: { icon: React.ElementType, title: string, description: string }) {
   return (
-    <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
-      <PageHeader title="Dashboard" />
-
-      <div className="space-y-6">
-        <div>
-            <h2 className="text-2xl font-bold tracking-tight text-accent mb-4">Manufacturer View</h2>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {manufacturerKpis.map((kpi) => (
-                <Card key={kpi.title} className="shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">{kpi.title}</CardTitle>
-                    <kpi.icon className="h-4 w-4 text-muted-foreground text-accent" />
-                </CardHeader>
-                <CardContent>
-                    <div className="text-2xl font-bold">{kpi.value}</div>
-                    <p className="text-xs text-muted-foreground">{kpi.change}</p>
-                </CardContent>
-                </Card>
-            ))}
-            </div>
-        </div>
-
-        <div>
-            <h2 className="text-2xl font-bold tracking-tight text-accent mb-4">Dispensary View</h2>
-            <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-            {dispensaryKpis.map((kpi) => (
-                <Card key={kpi.title} className="shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
-                <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                    <CardTitle className="text-sm font-medium">{kpi.title}</CardTitle>
-                    <kpi.icon className="h-4 w-4 text-muted-foreground text-accent" />
-                </CardHeader>
-                <CardContent>
-                    <div className="text-2xl font-bold">{kpi.value}</div>
-                    <p className="text-xs text-muted-foreground">{kpi.change}</p>
-                </CardContent>
-                </Card>
-            ))}
-            </div>
-        </div>
+    <div className="flex flex-col items-center p-6 text-center bg-card rounded-lg shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
+      <div className="p-4 rounded-full bg-primary/10 mb-4">
+        <Icon className="w-10 h-10 text-accent" />
       </div>
+      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <p className="text-muted-foreground">{description}</p>
+    </div>
+  );
+}
+
+export default function LandingPage() {
+  return (
+    <div className="flex flex-col min-h-screen bg-background">
+      <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div className="container flex h-14 items-center">
+          <Link href="/" className="flex items-center gap-2 font-bold text-xl text-accent mr-auto">
+            <Flower2 className="w-8 h-8" />
+            <span className="font-headline">Grams to Gains</span>
+          </Link>
+          <nav className="flex items-center gap-2">
+            <Button variant="ghost" asChild>
+              <Link href="/login">Login</Link>
+            </Button>
+            <Button asChild>
+              <Link href="/signup">Sign Up</Link>
+            </Button>
+          </nav>
+        </div>
+      </header>
+      <main className="flex-1">
+        <section className="container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-32">
+          <div className="space-y-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline tracking-tighter">
+              The B2B Cannabis Marketplace, Reimagined.
+            </h1>
+            <p className="text-lg text-muted-foreground md:text-xl">
+              Grams to Gains is the all-in-one platform connecting manufacturers, dispensaries, and growers. Streamline your operations, gain market insights, and grow your business with our AI-powered tools.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Button size="lg" asChild>
+                <Link href="/signup">Get Started For Free</Link>
+              </Button>
+              <Button size="lg" variant="outline" asChild>
+                <Link href="/login">Access Your Portal</Link>
+              </Button>
+            </div>
+          </div>
+          <div className="relative h-64 md:h-96">
+            <Image
+              src="https://placehold.co/600x400.png"
+              alt="Cannabis products"
+              fill
+              className="object-cover rounded-lg shadow-xl"
+              data-ai-hint="cannabis products display"
+            />
+          </div>
+        </section>
+
+        <section className="py-20 md:py-24 bg-muted">
+          <div className="container">
+            <div className="text-center max-w-3xl mx-auto mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold font-headline">Powerful Tools for Every Player</h2>
+                <p className="mt-4 text-lg text-muted-foreground">Whether you produce, sell, or grow, Grams to Gains provides the features you need to succeed in the competitive cannabis market.</p>
+            </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <FeatureCard 
+                    icon={TrendingUp}
+                    title="AI Demand Forecasting"
+                    description="For Manufacturers: Predict product demand with unparalleled accuracy to optimize production and never miss a sale."
+                />
+                 <FeatureCard 
+                    icon={BarChart}
+                    title="Smart Inventory"
+                    description="For Dispensaries: Get AI-driven recommendations on what to stock, ensuring your shelves are always filled with top-sellers."
+                />
+                 <FeatureCard 
+                    icon={FileText}
+                    title="Procurement Hub"
+                    description="For Growers: Find and connect with dispensaries and manufacturers actively looking for your flower strains."
+                />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer className="border-t">
+        <div className="container py-8 flex items-center justify-between">
+            <p className="text-muted-foreground text-sm">&copy; {new Date().getFullYear()} Grams to Gains. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</Link>
+                <Link href="#" className="text-sm text-muted-foreground hover:text-primary">Terms of Service</Link>
+            </div>
+        </div>
+      </footer>
     </div>
   );
 }

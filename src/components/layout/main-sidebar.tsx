@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 const menuItems = [
-  { href: "/", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/marketplace", label: "Marketplace", icon: ShoppingBag },
   { href: "/inventory", label: "Inventory", icon: Warehouse },
   { href: "/analytics", label: "Demand Forecasting", icon: LineChart },
@@ -42,7 +42,7 @@ export function MainSidebar() {
   return (
     <>
       <SidebarHeader>
-        <Link href="/" className="flex items-center gap-2 font-bold text-xl text-accent">
+        <Link href="/dashboard" className="flex items-center gap-2 font-bold text-xl text-accent">
           <Flower2 className="w-8 h-8" />
           <span className="group-data-[collapsible=icon]:hidden">Grams to Gains</span>
         </Link>
