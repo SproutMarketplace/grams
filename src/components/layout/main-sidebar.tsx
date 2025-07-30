@@ -44,7 +44,7 @@ export function MainSidebar() {
     <>
       <SidebarHeader>
         <Link href="/dashboard" className="flex items-center gap-2">
-          <Image src="/Grams to Gains.png" alt="Grams to Gains" width={180} height={40} className="group-data-[collapsible=icon]:hidden" />
+          <Image src="/GramstoGains.png" alt="Grams to Gains" width={180} height={40} className="group-data-[collapsible=icon]:hidden" />
           <Flower2 className="w-8 h-8 text-primary hidden group-data-[collapsible=icon]:block" />
         </Link>
       </SidebarHeader>

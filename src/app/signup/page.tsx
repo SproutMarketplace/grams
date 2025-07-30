@@ -25,7 +25,7 @@ export default function SignupPage() {
       <Card className="mx-auto w-full max-w-sm shadow-lg">
         <CardHeader className="text-center">
             <Link href="/" className="flex items-center justify-center mb-4">
-                <Image src="/Grams to Gains.png" alt="Grams to Gains" width={200} height={50} />
+                <Image src="/GramstoGains.png" alt="Grams to Gains" width={200} height={50} />
             </Link>
           <CardTitle className="text-2xl">Sign Up</CardTitle>
           <CardDescription>
