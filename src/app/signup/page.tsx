@@ -31,7 +31,7 @@ export default function SignupPage() {
           <CardDescription>
             Create your account to get started.
           </CardDescription>
-        </Header>
+        </CardHeader>
         <CardContent>
           <form className="grid gap-4">
             <div className="grid gap-2">
