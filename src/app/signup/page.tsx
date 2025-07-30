@@ -56,7 +56,7 @@ export default function SignupPage() {
               <Input id="password" type="password" required />
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="user-type">I am a...</Label>
+              <Label htmlFor="user-type">We are a...</Label>
               <Select>
                 <SelectTrigger id="user-type">
                   <SelectValue placeholder="Select user type" />
