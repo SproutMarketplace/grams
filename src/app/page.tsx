@@ -53,11 +53,10 @@ export default function LandingPage() {
           </div>
           <div className="relative h-64 md:h-96">
             <Image
-              src="https://placehold.co/600x400.png"
+              src="/landing.jpeg"
               alt="Cannabis products"
               fill
               className="object-cover rounded-lg shadow-xl"
-              data-ai-hint="cannabis products display"
             />
           </div>
         </section>
