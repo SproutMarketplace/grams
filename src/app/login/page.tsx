@@ -14,7 +14,7 @@ import Image from 'next/image';
 
 export default function LoginPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background p-4">
+    <div className="flex min-h-screen items-center justify-center bg-primary p-4">
       <Card className="mx-auto w-full max-w-sm shadow-lg">
         <CardHeader className="text-center">
             <Link href="/" className="flex items-center justify-center mb-4">
