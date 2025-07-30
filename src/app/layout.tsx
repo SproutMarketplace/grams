@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { MainLayout } from '@/components/layout/main-layout';
-import { Toaster } from '@/components/ui/toaster';
 import { AppRouterListener } from '@/components/layout/app-router-listener';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
   title: 'Grams to Gains',
@@ -24,7 +23,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;700&display=swap"
           rel="stylesheet"
         />
       </head>
