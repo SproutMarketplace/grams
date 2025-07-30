@@ -45,7 +45,7 @@ export function MainSidebar() {
       <SidebarHeader>
         <Link href="/dashboard" className="flex items-center gap-2">
           <Image src="/Grams to Gains.png" alt="Grams to Gains" width={180} height={40} className="group-data-[collapsible=icon]:hidden" />
-          <Flower2 className="w-8 h-8 text-accent hidden group-data-[collapsible=icon]:block" />
+          <Flower2 className="w-8 h-8 text-primary hidden group-data-[collapsible=icon]:block" />
         </Link>
       </SidebarHeader>
       <SidebarSeparator />
@@ -59,7 +59,7 @@ export function MainSidebar() {
                 tooltip={item.label}
               >
                 <Link href={item.href}>
-                  <item.icon className="text-accent" />
+                  <item.icon className="text-primary" />
                   <span>{item.label}</span>
                 </Link>
               </SidebarMenuButton>
@@ -73,7 +73,7 @@ export function MainSidebar() {
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="Settings">
               <Link href="#">
-                <Cog className="text-accent" />
+                <Cog className="text-primary" />
                 <span>Settings</span>
               </Link>
             </SidebarMenuButton>
@@ -81,7 +81,7 @@ export function MainSidebar() {
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="Logout">
               <Link href="/login">
-                <LogOut className="text-accent" />
+                <LogOut className="text-primary" />
                 <span>Logout</span>
               </Link>
             </SidebarMenuButton>

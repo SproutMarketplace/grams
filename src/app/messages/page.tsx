@@ -51,7 +51,7 @@ export default function MessagesPage() {
         <div className="md:col-span-1 lg:col-span-1 flex flex-col border rounded-lg">
           <div className="p-4">
             <div className="relative">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
+              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-foreground/60" />
               <Input placeholder="Search contacts..." className="pl-8" />
             </div>
           </div>
@@ -67,9 +67,9 @@ export default function MessagesPage() {
                   </Avatar>
                   <div className="flex-1 truncate">
                     <p className="font-semibold">{contact.name}</p>
-                    <p className="text-xs text-muted-foreground truncate">{contact.lastMessage}</p>
+                    <p className="text-xs text-foreground/60 truncate">{contact.lastMessage}</p>
                   </div>
-                  <time className="text-xs text-muted-foreground">{contact.time}</time>
+                  <time className="text-xs text-foreground/60">{contact.time}</time>
                 </button>
               ))}
             </div>

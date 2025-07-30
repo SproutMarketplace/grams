@@ -59,7 +59,7 @@ export default function MarketplacePage() {
               <div className="p-4">
                 <Badge variant="secondary" className="mb-2">{product.category}</Badge>
                 <CardTitle className="text-lg font-headline">{product.name}</CardTitle>
-                <p className="text-sm text-muted-foreground">{product.manufacturer}</p>
+                <p className="text-sm text-foreground/80">{product.manufacturer}</p>
               </div>
             </CardHeader>
             <CardContent className="flex-grow p-4 pt-0">

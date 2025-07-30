@@ -152,7 +152,7 @@ export function InventoryRecommendationsForm() {
         <h3 className="text-xl font-bold">AI Recommendations</h3>
         {loading && (
           <Card className="flex items-center justify-center p-8 shadow-md">
-            <Loader2 className="h-8 w-8 animate-spin text-accent" />
+            <Loader2 className="h-8 w-8 animate-spin text-primary" />
             <p className="ml-4">Generating recommendations...</p>
           </Card>
         )}

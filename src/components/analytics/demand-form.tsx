@@ -176,7 +176,7 @@ export function DemandForecastingForm() {
         <h3 className="text-xl font-bold">Prediction Result</h3>
         {loading && (
           <Card className="flex items-center justify-center p-8 shadow-md">
-            <Loader2 className="h-8 w-8 animate-spin text-accent" />
+            <Loader2 className="h-8 w-8 animate-spin text-primary" />
             <p className="ml-4">Forecasting demand...</p>
           </Card>
         )}
@@ -191,13 +191,13 @@ export function DemandForecastingForm() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="text-center">
-                <p className="text-sm text-muted-foreground">Predicted Demand</p>
-                <p className="text-5xl font-bold text-accent">
+                <p className="text-sm text-foreground/80">Predicted Demand</p>
+                <p className="text-5xl font-bold text-primary">
                   {result.predictedDemand.toLocaleString()} units
                 </p>
               </div>
               <div>
-                <p className="text-sm text-muted-foreground mb-1">Confidence Level</p>
+                <p className="text-sm text-foreground/80 mb-1">Confidence Level</p>
                 <Progress value={result.confidenceLevel * 100} className="h-2"/>
                 <p className="text-right text-sm font-bold">{Math.round(result.confidenceLevel * 100)}%</p>
               </div>

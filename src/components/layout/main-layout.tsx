@@ -22,12 +22,12 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
           <SidebarTrigger className="sm:hidden" />
           <div className="ml-auto flex items-center gap-2">
             <Button variant="ghost" size="icon" className="rounded-full">
-              <Bell className="h-5 w-5 text-accent" />
+              <Bell className="h-5 w-5 text-primary" />
               <span className="sr-only">Toggle notifications</span>
             </Button>
             <Link href="/login">
                 <Button variant="ghost" size="icon" className="rounded-full">
-                <User className="h-5 w-5 text-accent" />
+                <User className="h-5 w-5 text-primary" />
                 <span className="sr-only">Toggle user menu</span>
                 </Button>
             </Link>
