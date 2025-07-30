@@ -21,7 +21,7 @@ import Image from 'next/image';
 
 export default function SignupPage() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-primary p-4">
+    <div className="flex min-h-screen items-center justify-center bg-background p-4">
       <Card className="mx-auto w-full max-w-sm shadow-lg">
         <CardHeader className="text-center">
             <Link href="/" className="flex items-center justify-center mb-4">
@@ -31,7 +31,7 @@ export default function SignupPage() {
           <CardDescription>
             Create your account to get started.
           </CardDescription>
-        </CardHeader>
+        </Header>
         <CardContent>
           <form className="grid gap-4">
             <div className="grid gap-2">
