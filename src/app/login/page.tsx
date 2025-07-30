@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Flower2 } from 'lucide-react';
+import { Flower2, Home } from 'lucide-react';
 
 export default function LoginPage() {
   return (
