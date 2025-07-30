@@ -48,6 +48,7 @@ export function MainSidebar() {
           <Flower2 className="w-8 h-8 text-accent hidden group-data-[collapsible=icon]:block" />
         </Link>
       </SidebarHeader>
+      <SidebarSeparator />
       <SidebarContent>
         <SidebarMenu>
           {menuItems.map((item) => (
