@@ -34,7 +34,7 @@ export default function LandingPage() {
         </div>
       </header>
       <main className="flex-1">
-        <section className="container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-32">
+        <section className="relative container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-32">
           <div className="space-y-6">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-headline tracking-tighter">
               The B2B Cannabis Marketplace, Reimagined.
@@ -60,6 +60,14 @@ export default function LandingPage() {
             />
           </div>
         </section>
+
+        <div className="relative">
+          <div className="absolute inset-x-0 bottom-0 text-muted">
+            <svg viewBox="0 0 1440 120" fill="currentColor" className="w-full h-auto -mb-px">
+                <path d="M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C840,7.35031847 960,0 1080,0 C1200,0 1320,7.35031847 1440,21.2101911 Z"></path>
+            </svg>
+          </div>
+        </div>
 
         <section className="py-20 md:py-24 bg-muted">
           <div className="container">
