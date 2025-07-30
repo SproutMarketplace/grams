@@ -80,11 +80,11 @@ export default function LandingPage() {
           </div>
         </div>
 
-        <section className="py-20 md:py-24 bg-muted">
+        <section className="py-20 md:py-24 bg-primary text-primary-foreground">
           <div className="container">
             <div className="text-center max-w-3xl mx-auto mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold font-headline">Powerful Tools for Every Player</h2>
-                <p className="mt-4 text-lg text-muted-foreground">Whether you produce, sell, or grow, Grams to Gains provides the features you need to succeed in the competitive cannabis market.</p>
+                <p className="mt-4 text-lg text-primary-foreground/80">Whether you produce, sell, or grow, Grams to Gains provides the features you need to succeed in the competitive cannabis market.</p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <FeatureCard 
