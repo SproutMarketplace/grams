@@ -22,6 +22,7 @@ import {
   Cog,
   LogOut,
   Flower2,
+  Handshake,
 } from "lucide-react";
 
 const menuItems = [
@@ -32,6 +33,7 @@ const menuItems = [
   { href: "/documents", label: "Document Hub", icon: FileText },
   { href: "/invoicing", label: "Invoicing", icon: Receipt },
   { href: "/messages", label: "Messages", icon: MessageSquare },
+  { href: "/procurement", label: "Procurement", icon: Handshake },
 ];
 
 export function MainSidebar() {
@@ -76,7 +78,7 @@ export function MainSidebar() {
           </SidebarMenuItem>
           <SidebarMenuItem>
             <SidebarMenuButton asChild tooltip="Logout">
-              <Link href="#">
+              <Link href="/login">
                 <LogOut className="text-accent" />
                 <span>Logout</span>
               </Link>

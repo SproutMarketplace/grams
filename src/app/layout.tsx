@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { MainLayout } from '@/components/layout/main-layout';
 import { Toaster } from '@/components/ui/toaster';
+import { AppRouterListener } from '@/components/layout/app-router-listener';
 
 export const metadata: Metadata = {
   title: 'Grams to Gains',
@@ -28,7 +29,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-body antialiased">
-        <MainLayout>{children}</MainLayout>
+        <AppRouterListener>{children}</AppRouterListener>
         <Toaster />
       </body>
     </html>

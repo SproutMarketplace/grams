@@ -138,4 +138,43 @@ export const products = [
         status: "Pending",
     }
   ];
+
+  export const procurementRequests = [
+    {
+      id: 'req-01',
+      product: 'Flower',
+      strain: 'OG Kush',
+      quantity: 10,
+      pricePoint: 1100.00,
+      submittedBy: 'The Happy Dispensary',
+      companyType: 'Dispensary',
+    },
+    {
+      id: 'req-02',
+      product: 'Flower (Trim)',
+      strain: 'Blue Dream',
+      quantity: 50,
+      pricePoint: 400.00,
+      submittedBy: 'AeroVapes',
+      companyType: 'Manufacturer',
+    },
+    {
+      id: 'req-03',
+      product: 'Flower',
+      strain: 'Girl Scout Cookies',
+      quantity: 25,
+      pricePoint: 1350.00,
+      submittedBy: 'The Green Leaf',
+      companyType: 'Dispensary',
+    },
+    {
+        id: 'req-04',
+        product: 'Flower',
+        strain: 'Sour Diesel',
+        quantity: 5,
+        pricePoint: 1250.00,
+        submittedBy: 'Buds & Co.',
+        companyType: 'Dispensary',
+    },
+  ];
   

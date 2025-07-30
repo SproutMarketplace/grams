@@ -9,6 +9,7 @@ import {
 import { MainSidebar } from "./main-sidebar";
 import { Button } from "../ui/button";
 import { Bell, User } from "lucide-react";
+import Link from "next/link";
 
 export function MainLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -24,10 +25,12 @@ export function MainLayout({ children }: { children: React.ReactNode }) {
               <Bell className="h-5 w-5 text-accent" />
               <span className="sr-only">Toggle notifications</span>
             </Button>
-            <Button variant="ghost" size="icon" className="rounded-full">
-              <User className="h-5 w-5 text-accent" />
-              <span className="sr-only">Toggle user menu</span>
-            </Button>
+            <Link href="/login">
+                <Button variant="ghost" size="icon" className="rounded-full">
+                <User className="h-5 w-5 text-accent" />
+                <span className="sr-only">Toggle user menu</span>
+                </Button>
+            </Link>
           </div>
         </header>
         {children}
