@@ -52,7 +52,7 @@ export default function MarketplacePage() {
                   src={product.imageUrl}
                   alt={product.name}
                   fill
-                  style={{ objectFit: 'cover' }}
+                  className="object-cover"
                   data-ai-hint={product.aiHint}
                 />
               </div>

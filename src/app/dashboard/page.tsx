@@ -71,7 +71,7 @@ export default function DashboardPage() {
 
       <div className="space-y-6">
         <div>
-            <h2 className="text-2xl font-bold tracking-tight text-primary mb-4">Manufacturer View</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-white mb-4">Manufacturer View</h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {manufacturerKpis.map((kpi) => (
                 <Card key={kpi.title} className="shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
@@ -89,7 +89,7 @@ export default function DashboardPage() {
         </div>
 
         <div>
-            <h2 className="text-2xl font-bold tracking-tight text-primary mb-4">Dispensary View</h2>
+            <h2 className="text-2xl font-bold tracking-tight text-white mb-4">Dispensary View</h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
             {dispensaryKpis.map((kpi) => (
                 <Card key={kpi.title} className="shadow-md transition-all hover:shadow-lg hover:-translate-y-1">

@@ -48,7 +48,7 @@ export function MainSidebar() {
           <Flower2 className="w-8 h-8 text-primary hidden group-data-[collapsible=icon]:block" />
         </Link>
       </SidebarHeader>
-      <SidebarSeparator />
+      <SidebarSeparator className="bg-white/20" />
       <SidebarContent>
         <SidebarMenu>
           {menuItems.map((item) => (
@@ -67,7 +67,7 @@ export function MainSidebar() {
           ))}
         </SidebarMenu>
       </SidebarContent>
-      <SidebarSeparator />
+      <SidebarSeparator className="bg-white/20" />
       <SidebarFooter>
         <SidebarMenu>
           <SidebarMenuItem>
