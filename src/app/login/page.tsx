@@ -10,15 +10,15 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Flower2, Home } from 'lucide-react';
+import Image from 'next/image';
 
 export default function LoginPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-background p-4">
       <Card className="mx-auto w-full max-w-sm shadow-lg">
         <CardHeader className="text-center">
-            <Link href="/" className="flex items-center justify-center gap-2 font-bold text-2xl text-accent mb-2">
-                <Flower2 className="w-8 h-8" />
-                <span>Grams to Gains</span>
+            <Link href="/" className="flex items-center justify-center mb-4">
+                <Image src="/Grams to Gains.png" alt="Grams to Gains" width={200} height={50} />
             </Link>
           <CardTitle className="text-2xl">Login</CardTitle>
           <CardDescription>

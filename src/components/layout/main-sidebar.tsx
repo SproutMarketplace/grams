@@ -24,6 +24,7 @@ import {
   Flower2,
   Handshake,
 } from "lucide-react";
+import Image from "next/image";
 
 const menuItems = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
@@ -42,9 +43,9 @@ export function MainSidebar() {
   return (
     <>
       <SidebarHeader>
-        <Link href="/dashboard" className="flex items-center gap-2 font-bold text-xl text-accent">
-          <Flower2 className="w-8 h-8" />
-          <span className="group-data-[collapsible=icon]:hidden">Grams to Gains</span>
+        <Link href="/dashboard" className="flex items-center gap-2">
+          <Image src="/Grams to Gains.png" alt="Grams to Gains" width={180} height={40} className="group-data-[collapsible=icon]:hidden" />
+          <Flower2 className="w-8 h-8 text-accent hidden group-data-[collapsible=icon]:block" />
         </Link>
       </SidebarHeader>
       <SidebarContent>

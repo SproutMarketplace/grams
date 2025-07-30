@@ -20,9 +20,8 @@ export default function LandingPage() {
     <div className="flex flex-col min-h-screen bg-background">
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-14 items-center">
-          <Link href="/" className="flex items-center gap-2 font-bold text-xl text-accent mr-auto">
-            <Flower2 className="w-8 h-8" />
-            <span className="font-headline">Grams to Gains</span>
+          <Link href="/" className="mr-auto">
+            <Image src="/Grams to Gains.png" alt="Grams to Gains" width={180} height={40} />
           </Link>
           <nav className="flex items-center gap-2">
             <Button variant="ghost" asChild>
