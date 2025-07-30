@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { PageHeader } from '@/components/page-header';
 import { DollarSign, Package, Users, ShoppingCart, TrendingUp } from 'lucide-react';
+import { Separator } from '@/components/ui/separator';
 
 const manufacturerKpis = [
   {
@@ -68,7 +69,7 @@ export default function DashboardPage() {
   return (
     <div className="flex-1 space-y-4 p-4 md:p-8 pt-6">
       <PageHeader title="Dashboard" />
-
+      <Separator className="my-4 bg-white/20" />
       <div className="space-y-6">
         <div>
             <h2 className="text-2xl font-bold tracking-tight text-white mb-4">Manufacturer View</h2>
