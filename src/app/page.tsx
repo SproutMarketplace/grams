@@ -7,7 +7,7 @@ function FeatureCard({ icon: Icon, title, description }: { icon: React.ElementTy
   return (
     <div className="flex flex-col items-center p-6 text-center bg-card rounded-lg shadow-md transition-all hover:shadow-lg hover:-translate-y-1">
       <div className="p-4 rounded-full bg-primary/10 mb-4">
-        <Icon className="w-10 h-10 text-accent" />
+        <Icon className="w-10 h-10 text-primary" />
       </div>
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-muted-foreground">{description}</p>
