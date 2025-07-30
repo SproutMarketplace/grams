@@ -61,11 +61,22 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <div className="relative">
-          <div className="absolute inset-x-0 bottom-0 text-muted">
-            <svg viewBox="0 0 1440 120" fill="currentColor" className="w-full h-auto -mb-px">
-                <path d="M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C840,7.35031847 960,0 1080,0 C1200,0 1320,7.35031847 1440,21.2101911 Z"></path>
-            </svg>
+        <div className="relative w-full h-[120px] overflow-x-hidden">
+          <div className="absolute top-0 left-0 w-[200%] h-full">
+            <div className="absolute top-0 left-0 w-1/2 h-full animate-wave">
+                <div className="absolute inset-x-0 bottom-0 text-muted">
+                    <svg viewBox="0 0 1440 120" fill="currentColor" className="w-full h-auto -mb-px">
+                        <path d="M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C840,7.35031847 960,0 1080,0 C1200,0 1320,7.35031847 1440,21.2101911 Z"></path>
+                    </svg>
+                </div>
+            </div>
+            <div className="absolute top-0 left-1/2 w-1/2 h-full animate-wave">
+                <div className="absolute inset-x-0 bottom-0 text-muted">
+                    <svg viewBox="0 0 1440 120" fill="currentColor" className="w-full h-auto -mb-px">
+                        <path d="M1440,21.2101911 L1440,120 L0,120 L0,21.2101911 C120,35.0700637 240,42 360,42 C480,42 600,35.0700637 720,21.2101911 C840,7.35031847 960,0 1080,0 C1200,0 1320,7.35031847 1440,21.2101911 Z"></path>
+                    </svg>
+                </div>
+            </div>
           </div>
         </div>
 
